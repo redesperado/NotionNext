@@ -29,8 +29,6 @@ export const getThemeConfig = async themeQuery => {
             console.error(`Failed to load theme ${themeName}:`, err)
             return null // 主题加载失败时返回 null 或者其他默认值
           })
-
-        console.info('THEME_CONFIG: ${THEME_CONFIG}')
         
         // 如果主题配置加载成功，返回配置
         if (THEME_CONFIG) {
